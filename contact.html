@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="blogs.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+    <!--Contact Us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.477520478144!2d36.80615663476563!3d-1.2883570000000135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1104c66e4d3d%3A0xd92874834bb23ab2!2sZetech%20University!5e0!3m2!1sen!2ske!4v1709235919778!5m2!1sen!2ske" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="Contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5> Off Thika Road - Ruiru. P.O. Box 2768 00200, Nairobi, Kenya. </h5>
+                        <p> Pioneer house, Haile Selassie Ave, Starehe</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5> +254707296075 </h5>
+                        <p>From Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>timothymorandi70@gmail.com </h5>
+                        <p> Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="text" name="subject" placeholder="Enter Your subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                    <button type="submit"  class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+ <!---FOOTER-->
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>We are there to suuport each and every student's need and as well to make it easy for them<br> to acquire the education
+        they need to soot there needs and there hard work all in all to provide a brigt future for all
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-X"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-Linkin"></i>
+    </div>
+    <p> Made by<i class="fa fa-love"></i>Timothy Morandi </p>
+</section>
+
+    <!---Javascrip toggle menu-->
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
